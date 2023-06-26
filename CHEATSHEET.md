@@ -19,6 +19,9 @@ Run GRASS from a container in Docker
 docker run -v ./grassdata:/grassdb -it mundialis/grass-py3-pdal:8.2.1-alpine bash
 ```
 
+* on macOS with M1/M2, you need to enable Rosetta in _Docker…Settings…Features
+  in Development_. Then `docker run` as above adding `--platform=linux/amd64`
+
 cd to volume
  ```bash 
 cd /grassdata
